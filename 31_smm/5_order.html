@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru"> <!-- Это указание пространства имён для XHTML документов. -->
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- - это указание браузеру о том, что на странице находиться текст в кодировке UTF-8. -->
+		<meta name="robots" content="noindex, nofollow" />
+		<!-- - это указание для роботов поисковых систем о том, что страницу нужно индексировать.
+		Если вы не хотите, чтобы страница индексировалась, поменяйте значения на noindex, nofollow. -->
+		<meta name="keywords" content="Продвижение бизнеса в социальных сетях" />
+		<!-- - раньше использовалось для поискового продвижения, теперь они не учитываются. Но указать можно. -->
+		<meta name="description" content="Продвижение бизнеса в социальных сетях" />
+		<!-- - ваше описание страницы, 2-3 коротких законченных предложения.  -->
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<!-- Подключение иконки сайта. Желательно, чтобы иконка находилась в корневой папке вашего сайта. -->
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<!-- Поключение файла CSS -->
+		<!-- Разработка сайта: Дементьев Александр Андреевич. https://vk.com/ya_sanya_ya -->
+		<title>Заказать</title>
+</head>
+
+
+
+<body>
+	<div id="page">
+			<div id="layout"> <!-- Основной макет 960px -->
+		
+			<!-- Шапка сайта -->
+			<div id="header">
+				<a href="index.html">
+					<img src="images/logo.png" alt="Продвижение бизнеса в социальных сетях" title="Продвижение бизнеса в социальных сетях"/>
+				</a>
+				<div id="header1">
+					<p><span class="tel" title="Продвижение товаров и услуг">Продвижение товаров и услуг</span></p>
+				</div>
+			</div> <!-- header -->
+			
+			<!-- Меню -->			
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="2_services.html">Услуги</a></li>
+					<li><a href="3_comment.html">Отзывы</a></li>
+					<li><a href="4_aboutus.html">О нас</a></li>
+					<li><a href="5_order.html" class="current">Заказать</a></li>
+				</ul>
+			</div> <!-- menu -->
+			
+			<!-- Основной текст + сайдбар -->			
+			<div id="content">
+				
+				<div id="text">
+					<h1>Здесь вы можете оформить заказ!</h1></br>
+					
+					<div class="form">
+						<form name="order" method="post" action="send.php">
+							<!-- 	name ="forma" - имя формы
+									method="post" - метод передачи данных. Есть GET и есть POST, post – более ёмкий и безопасный.
+									action="form.php" – путь до файла обработчика  -->	
+							
+							<table class="table_form">
+								<tr><!-- 1-ая строка -->
+									<td>Введите ваше имя:</td>
+									<td><input type="text" name ="name" maxlength="25" size="36" required/></td>
+								</tr>
+								<tr><!-- 2-ая строка -->
+									<td>Введите ваш E-mail:</td>
+									<td><input type="email" name ="email" maxlength="25" size="36" required/></td>
+								</tr>
+								<tr><!-- 3-ая строка -->
+									<td>Введите ваш номер телефона:</td>
+									<td><input type="text" name ="phone" maxlength="25" size="36" required/></td>
+								</tr>
+								<tr><!-- 4-ая строка -->
+									<td>Выберите услугу:</td>
+									<td>
+													<select name="service"> <!-- multiple - множественный выбор значений -->
+														<!-- <p>Введите ваш номер телефона:<input type="text" name ="phone"/></p> -->
+														<option selected="selected">- Выберите услугу -</option> <!-- selected="selected" - по умолчанию данное значение стоит в списке первым -->
+														<option>Настройка таргетированной рекламы</option>
+														<option>Ведение сообщества, работа с контентом</option>
+														<option>Аудит сообщества</option>
+														<option>Консультация</option>
+													</select>
+									</td>
+								</tr>
+								<tr><!-- 5-ая строка -->
+									<td>Вы уже продвигаете бизнес в соц.сетях?</td>
+									<td>
+										<ul>
+											<li><input type="radio" name ="business" value="Да, опыт есть"/><span>Да, опыт есть</span></li>
+											<li><input type="radio" name ="business" value="Впервые буду пробовать"/><span>Впервые буду пробовать</span></li>
+										</ul>
+									</td>
+								</tr>
+								<tr><!-- 6-ая строка -->
+									<td>Комментарий к заказу:</td>
+									<td><textarea name="comment" rows="4" cols="38"></textarea></td>
+								</tr>
+							</table>
+							</br>				
+
+								<input type="submit" value="Отправить" class="button">
+								<!--Input может иметь разные типы:
+								<input type="text" /> - обычное однострочное текстовое поле
+								<input type="email" /> - такое же поле, но для e-mail адреса (это из нового HTML5)
+								<input type="password" /> - текстовое поле для пароля
+								<input type="checkbox" /> - флажки(галочки), позволяет выбрать несколько вариантов
+								<input type="radio" /> - радиокнопка (переключатель), позволяет выбрать одно значение из нескольких
+								<input type="file" /> - поле для выбора файла на компьютере
+								<input type="reset" /> - сброс введённых данных в форму
+								<input type="button" /> - кнопка
+								<input type="hidden" /> - скрытое поле, оно не отображается в форме
+								<input type="submit" /> - кнопка отправки данных из формы
+								Для каждого элемента формы задаётся имя = name, это нужно для того, чтобы скрипт-обработчик смог понять, что и как это обрабатывать. -->
+
+						</form>
+					</div> <!-- class="form" -->					
+																				
+				</br>
+					<p><a href="6_order.html" onclick="window.open('6_order.html','Сделать заказ', 'width=520,height=365,left='+(screen.availWidth/2-260)+', top='+(screen.availHeight/2-250)+'');return false;">Оформить заказ в новом окне</a></p>
+						<!-- 
+							В ссылке указаны параметры открытия окна:
+							- width – ширина окна
+							- height – высота окна
+							- left – расстояние от левого края монитора
+							- top – расстояние от верхнего края монитора.
+							В данном примере для расстояния заданы усложнённые параметры, которые автоматически высчитывают размеры.
+							При необходимости их можно изменить на простые пиксели. -->
+				
+				</div> <!-- text -->
+								
+				<div id="sidebar">
+					<div class="contact">
+						<h3>Наши контакты</h3>
+						<p>E-mail:<a href="mailto:socsetbus@mail.ru">socsetbus@mail.ru</a></p>
+							<a href="https://www.instagram.com/as_asja?r=nametag" target="_blank"><img src="images/inst.png" /></a>
+							<a href="https://vk.com/ylej_marketiljgov" target="_blank"><img src="images/vk.png" /></a>
+					</div>
+					<div class="ws">
+						<h3>Написать в WhatsApp</h3>
+							<a href="https://wa.me/79852168748" target="_blank"><img src="images/wa.png" /></a>
+					</div>
+				</div> <!-- sidebar -->
+				
+			</div> <!-- content -->	
+			<!-- Футер -->				
+			<div id="footer">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="2_services.html">Услуги</a></li>
+					<li><a href="3_comment.html">Отзывы</a></li>
+					<li><a href="4_aboutus.html">О нас</a></li>
+					<li><a href="5_order.html" class="current">Заказать</a></li>
+				</ul>			
+			</div> <!-- footer -->
+			</br>
+			
+		</div> <!-- layout -->	
+	</div> <!-- page -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
