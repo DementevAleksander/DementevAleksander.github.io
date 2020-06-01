@@ -1,0 +1,303 @@
+<?php require 'utm.php' ?>
+
+<!--   HTML документ  -->
+
+<!DOCTYPE html>
+<html lang="ru-ru" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Адаптивный сайт под мобильные устройства -->
+<!--  <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> -->
+<meta name="description" content="..." />
+<meta name="keywords" content="..." />
+<!---  HTML5 для старых браузеров IE -->
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--   Разработка сайта: Дементьев Александр Андреевич. https://vk.com/ya_sanya_ya -->
+<meta name="author" content="Dementev Alexandr Andreevich">
+
+<!--   Подключение CSS  и шрифтов -->
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+<!--  Подключение JQuery из хранилища Гугл -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!--  Доп скрипт для плавной прокрутки, для работы необходим JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("a.topLink").click(function() {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500
+        });
+        return false;
+    });
+});
+</script>
+
+<title>Работа онлайн</title>
+</head>
+<body id="page">
+    <section id="header" class="header"> <!-- Логотип, меню, заголовок, шапка -->         
+        <div class="layout">
+            <a href="#header" title="Работа онлайн"><img src="images/logo.png" alt="" /></a>
+            <menu>
+                <li><a class="topLink" href="#header">Начало</a></li>
+                <li><a class="topLink" href="#service">Услуги</a></li>
+                <li><a class="topLink" href="#portfolio">Преимущества</a></li>
+                <li><a class="topLink" href="#aboutas">О нас</a></li>
+                <li><a class="topLink" href="#contact">Контакты</a></li>
+            </menu>
+            <div class="clr"></div>
+            <span>Добро пожаловать!<br /></span>
+            <h1>Мы рады вам</h1>
+            <a class="button topLink" href="#portfolio">Узнать больше</a>
+        </div>
+    </section>
+    
+    <section id="service"> <!-- Услуги -->
+        <div class="layout">
+            <h2>Услуги</h2>
+            <span class="headline">Чем мы можем вам помочь</span>
+            <div class="box3">
+                <img src="images/obychenie.png" />
+                <h4>Обучение онлайн</h4>
+                <p>Мы проводим обучение по заработку через сеть интернет</p>
+            </div>
+            
+            <div class="box3">
+                <img src="images/nastavnik.png" />
+                <h4>Наставничество</h4>
+                <p>За каждым случашетелем закрепляется наставник, который помогает Вам в ходе обучения</p>
+            </div>
+            
+            <div class="box3">
+                <img src="images/podderjka.png" />
+                <h4>Поддержка</h4>
+                <p>Мы помогаем Вам добиться результатов и выйти на реальный доход</p>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="portfolio"> <!-- ПРЕИМУЩЕСТВА РАБОТЫ ОНЛАЙН -->
+        <div class="layout">
+            <h2>Преимущества работы онлайн</h2>
+            <span class="headline">Почему стоит попробовать работу онлайн</span>
+            
+            <div class="flex_box3_conteiner">
+                <div class="flex_box3">
+                    <a class="topLink" class="topLink" href="#contact">
+                        <img src="images/svoboda.jpg" />
+                        <div>
+                            <span>Посмотреть</span>
+                        </div>
+                    </a>
+                    <h4>Свободный график</h4>
+                    <!-- Вы можете работать когда захотите. Никаких рамок, и четких часов работы. -->
+                </div>
+                
+                <div class="flex_box3">
+                    <a class="topLink" href="#contact">
+                        <img src="images/dohod.jpg" />
+                        <div>
+                            <span>Посмотреть</span>
+                        </div>
+                    </a>
+                    <h4>Неограниченный доход</h4>
+                    <!-- Ваш заработок может быть неограничным, в отличие от работы в штате. Все зависит от вашего упорства и целеустремленности. -->
+                </div>
+                
+                <div class="flex_box3">
+                    <a class="topLink" href="#contact">
+                        <img src="images/zarobotok.jpg" />
+                        <div>
+                            <span>Посмотреть</span>
+                        </div>
+                    </a>
+                    <h4>Пассивный заработок</h4>
+                    <!-- Идея однажды добиться того, чтобы ничего не делать и получать за это деньги, выглядит привлекательной. -->
+                </div>
+                
+                <div class="flex_box3">
+                    <a class="topLink" href="#contact">
+                        <img src="images/freelance.jpg" />
+                        <div>
+                            <span>Посмотреть</span>
+                        </div>
+                    </a>
+                    <h4>Удалённая работа</h4>
+                    <!-- Не нужно 8 часов сидеть в офисе. Вы сами выбираете, где и что делать. -->
+                </div>
+                
+                <div class="flex_box3">
+                    <a class="topLink" href="#contact">
+                        <img src="images/kollectiv.jpg" />
+                        <div>
+                            <span>Посмотреть</span>
+                        </div>
+                    </a>
+                    <h4>Сплоченный коллектив</h4>
+                    <!-- Люди довольно дружелюбны, но далеко не все готовы выходить за рамки общения, ограниченные работой. -->
+                </div>
+                
+                <div class="flex_box3">
+                    <a class="topLink" href="#contact">
+                        <img src="images/bonus.jpg" />
+                        <div>
+                            <span>Посмотреть</span>
+                        </div>
+                    </a>
+                    <h4>Бонусы за покупки</h4>
+                    <!-- Если нет специально оговорённых условий, вы можете покупать товары для себя хоть на всю положенную сумму и получать за это вознаграждение. -->
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <section id="aboutas"> <!-- О нас -->
+        <div class="layout">
+            <h2>О нас</h2>
+            <span class="headline">Кто мы такие</span>
+            <div class="border">
+                <div class="level">
+                    <img src="images/Aboutas1.jpg" />
+                    <h4>Опыт</h4>
+                    <p>В нашей команде работают специалисты по онлайн-маркетингу, опыт которых более 5 лет</p>
+                </div>
+                <div class="level">
+                    <img src="images/Aboutas2.jpg" />
+                    <h4>Большая команда</h4>
+                    <p>Более 20 специалистов помогают определиться с направлением онлайн-работы</p>
+                </div>
+                <div class="level">
+                    <img src="images/Aboutas3.jpg" />
+                    <h4>Сертифицированные работники</h4>
+                    <p>Наши работники, сами прошли обучение у ведущих экспертов по онлайн-маркетингу и имеют сертификат</p>
+                </div>
+                <div class="level">
+                    <img src="images/Aboutas4.jpg" />
+                    <h4>Высокая обучаемость</h4>
+                    <p>Наша команда помогла более 100 слушателям определиться с направлением онлайн-работы в которой они хотели бы работать</p>
+                </div>                
+                <div class="level">
+                    <a href="#contact"><img src="images/Aboutas5.jpg" /></a>
+                </div> 
+            </div>
+        </div>
+    </section> 
+    
+    
+    
+    
+    <section id="team"> <!-- Наша команда -->
+        <div class="layout">
+            <h2>Наша команда</h2>
+            <span class="headline">Наши ведущие специалисты</span>
+            
+            <div class="box3">
+                <img src="images/Command1.jpg" />
+                <h4>Ася</h4>
+                <p>Лидер команды</p>
+                <div class="social">
+                    <a class="vk" href="https://vk.com/ylej_marketiljgov" target="_blank"></a>
+                    <a class="inst" href="https://www.instagram.com/as_asja?r=nametag" target="_blank"></a>
+                    <a class="wa" href="https://wa.me/79852168748" target="_blank"></a>
+                    <a class="youtube" href="https://www.youtube.com/channel/UCeiHtvZQwqonRJO_R1xmnfw" target="_blank"></a>
+                </div>
+            </div>
+                
+            <div class="box3">
+                <img src="images/Command2.JPG" />
+                <h4>Анастасия</h4>
+                <p>Маркетолог</p>
+                <div class="social">
+                    <a class="vk" href="#team"></a>
+                    <a class="inst" href="#team"></a>
+                </div>
+            </div>
+            
+            <div class="box3">
+                <img src="images/Command3.JPG" />
+                <h4>Nastya</h4>
+                <p>Наставник</p>
+                <div class="social">
+                    <a class="vk" href="#team"></a>
+                    <a class="inst" href="#team"></a>
+                </div>
+            </div>
+            <div class="clr"></div>
+            <p class="resume">Мы любим свою работу и делаем её качественно.</p>
+        </div>
+    </section>
+    
+    <section id="contact"> <!-- Контакты -->
+        <div class="layout">
+            <h2>Напишите нам</h2>
+            <span class="headline">Остались вопросы? Пишите нам, мы с радостью на них ответим!</span>
+        </div>
+        <form action="form.php" method="POST">
+            <div class="box2">
+                <ul>
+                    <li><input type="text" name="text" placeholder="Ваше имя *" required /></li>
+                    <li><input type="email" name="email" placeholder="Ваш e-mail *" required /></li>
+                    <li><input type="tel" name="tel" placeholder="Ваш телефон" /></li>
+                    <!-- utm-метки -->
+                    <input type="hidden" name="source" value="<?php echo $source ?>" />
+                    <input type="hidden" name="content" value="<?php echo $content ?>" />
+                    <input type="hidden" name="medium" value="<?php echo $medium ?>" />
+                    <input type="hidden" name="campaign" value="<?php echo $campaign ?>" />
+                    <input type="hidden" name="term" value="<?php echo $term ?>" />                
+                </ul>
+            </div>
+            <div class="box2">
+                <textarea name="message" placeholder="Ваш вопрос *" required></textarea>
+            </div>
+            <input type="submit" class="button disabled" value="Отправить"  />
+        </form>
+    </section>
+    
+    <section id="map"> <!-- Карта -->
+        <div class="layout">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acf143d64abadc89fb538ed1899b54cbc8e6610e406bcd4deacded699a6dfc5cc&amp;width=100%25&amp;height=444&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </section>
+    
+    <footer> <!-- Копирайтинг -->
+        <div class="layout">
+            <div class="box3"><p class="footer">© Copyright 2020</p></div>
+            <div class="box3">
+                <div class="social">
+                    <a class="vk" href="https://vk.com/ylej_marketiljgov" target="_blank"></a>
+                    <a class="inst" href="https://www.instagram.com/as_asja?r=nametag" target="_blank"></a>
+                    <a class="wa" href="https://wa.me/79852168748" target="_blank"></a>
+                    <a class="youtube" href="https://www.youtube.com/channel/UCeiHtvZQwqonRJO_R1xmnfw" target="_blank"></a>
+                </div>
+            </div>
+            <div class="box3"></div>
+        </div>
+    </footer>
+    <a class="fixed topLink" href="#header">Наверх</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+&lt;?php echo $source ?&gt;;&lt;?php echo $medium ?&gt;;&lt;?php echo $campaign ?&gt;;&lt;?php echo $content ?&gt;;&lt;?php echo $term ?&gt;;BlaBlaBlaBla@mail.ru;7;Александр;
+&lt;?php echo $source ?&gt;;&lt;?php echo $medium ?&gt;;&lt;?php echo $campaign ?&gt;;&lt;?php echo $content ?&gt;;&lt;?php echo $term ?&gt;;BlaBlaBlaBla@mail.ru;7;Александр;
