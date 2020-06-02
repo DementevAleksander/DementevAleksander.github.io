@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Для совместимости с IE -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext"
+    rel="stylesheet" /> <!--   Подключение шрифтов fonts.google.com -->
+  <!-- Bootstrap CSS -->
+  <!-- При подключении Bootstrap CSS не нужно сбрасывать стили и не нужно подключать normalize.min.css-->
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css"> <!-- Сетка с колонками -->
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/slick.css"> <!-- Слайдер -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="author" content="Dementev Alexandr"> <!-- Автор -->
+  <title>Официальный представитель SIBERIAN WELLNESS</title>
+</head>
+
+<body>
+  <!-- Первая секция с заголовком -->
+  <section class="promo" id="up">
+    <div class="conteiner">
+      <!-- Основная строка -->
+      <header class="header">
+        <a href="#" class="header__logo">
+          <img src="img/logo.png" alt="as_asya">
+        </a>
+        <div class="header__official">
+          Официальный представитель компании
+          <span>SIBERIAN WELLNESS</span>
+        </div>
+        <div class="header__contacts">
+          Напишите нам
+          <button data-modal="consultation" class="button">
+            Написать
+          </button>
+        </div>
+      </header>
+      <!-- Остальной текст, обёртка -->
+      <div class="promo__wrapper">
+        <h1 class="promo__header">Продукция для здоровья</h1>
+        <h2 class="promo__subheader">С учётом ваших потребностей</h2>
+
+        <div class="promo__icons">
+          <div class="promo__icon">
+            <img src="img/timer_time_stopwatch.png" alt="Время подбора: 10 минут">
+            Время подбора: 10 минут
+          </div>
+          <div class="promo__icon">
+            <img src="img/hand-cart.png" alt="Бесплатная доставка*">
+            Бесплатная доставка*
+          </div>
+          <div class="promo__icon">
+            <img src="img/messages.png" alt="Ответим на все вопросы">
+            Ответим на все вопросы
+          </div>
+        </div>
+        <button data-modal="consultation" class="button button_main">
+          Заказать консультацию
+        </button>
+        <div class="promo__link">
+          или
+          <a href="https://ru.siberianhealth.com/ru/?ref=2411888420" target="_blank">Перейти в каталог</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Вторая секция с преимуществами -->
+  <section class="advantage wow animate__slideInLeft" data-wow-duration="1s"">
+      <div class=" conteiner">
+    <div class="title">Наши преимущества</div>
+    <div class="advantage__lists">
+      <div class="advantage__list">
+        <img src="img/cup.png" alt="Делимся опытом" class="advantage__icon animate__flip animate__animated">
+        Делимся опытом
+        <span>
+          Встречи с Клиентами в нескучном формате:
+          интересный контент, тестирование продукции,
+          живое общение и,как результат,легкие сделки!
+        </span>
+      </div>
+      <div class="advantage__list">
+        <img src="img/heart.png" alt="Заботимся о здоровье" class="advantage__icon_animated">
+        Заботимся о здоровье
+        <span>
+          Продукты не содержат сахара,
+          пальмового масла и любых других посторонних жиров,
+          низкокачественных белков сои и гороха,
+          искусственных пищевых волокон и других потенциально опасных синтетических добавок.
+        </span>
+      </div>
+      <div class="advantage__list">
+        <img src="img/shoe.png" alt="Учим бегать" class="advantage__icon animate__rotateInDownRight">
+        Экспертный контент
+        <span>
+          Специальные программы для успешного бизнеса
+          и поддержания отличной фигуры – только экспертный контент и никакой воды!
+        </span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Третья секция с формрой обратной связи -->
+  <section class="consultation">
+    <div class="conteiner">
+      <h2 class="title title__left">Получите бесплатную консультацию <br>
+        по подбору продукции для красоты и здоровья
+      </h2>
+      <div class="consultation__description">
+        Просто заполните форму заявки <br>
+        и мы перезвоним вам
+      </div>
+      <form class="feed_form" id="feedback" action="#">
+        <input name="name" required placeholder="Ваше имя" type="text">
+        <input name="phone" type="number" required placeholder="Ваш телефон">
+        <input name="email" required placeholder="Ваш E-mail" type="email">
+        <!-- <input type="submit" value="Заказать консультацию"> -->
+        <button class="button button_main button_form">Заказать консультацию</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Четвёртая секция со слайдером -->
+  <section class="caruosel">
+    <div class="conteiner">
+      <div class="caruosel__inner">
+        <div>
+          <a href="https://ru.siberianhealth.com/ru/shop/catalog/category/2/?ref=2411888420"
+            class="caruosel__inner_link" target="_blank"><img src="img/slide_1.jpg" alt="Catalog"></a>
+        </div>
+        <div>
+          <a href="https://ru.siberianhealth.com/ru/geo/?ref=2411888420" class="caruosel__inner_link"
+            target="_blank"><img src="img/slide_2.jpg" alt="Geo"></a>
+        </div>
+        <div>
+          <a href="https://ru.siberianhealth.com/ru/shop/page/catalog-and-price-lists/?ref=2411888420"
+            class="caruosel__inner_link" target="_blank"><img src="img/slide_3.jpg" alt="Price"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Пятая секция с каталогом товаров -->
+  <section class="catalog">
+    <div class="conteiner">
+      <h2 class="title">Ознакомительный каталог продукции</h2>
+
+      <ul class="catalog__tabs">
+        <li class="catalog__tab catalog__tab_active">
+          <div>здоровье</div>
+        </li>
+        <li class="catalog__tab">
+          <div>спорт</div>
+        </li>
+        <li class="catalog__tab">
+          <div>питание</div>
+        </li>
+      </ul>
+      <a href="https://ru.siberianhealth.com/ru/?ref=2411888420" target="_blank" class="catalog__tab_all">
+        <div>
+          Посмотреть другие категории товаров
+        </div>
+      </a>
+
+
+      <!-- Первая вкладка - Здоровье -->
+      <div class="catalog__content catalog__content_active">
+
+        <!-- 1 карточка с товаром -->
+        <div class="catalog-item">
+
+          <div class="catalog-item__wrapper">
+            <!-- Обёртка. В неё поожил два блока: 1. С картинкой товара. 2. С описанием товара. -->
+            <div class="catalog-item__content catalog-item__content_active">
+              <!-- Первый блок с картинкой товара. -->
+              <img src="img/novomin.png" alt="novomin" class="catalog-item__img">
+              <div class="catalog-item__subtitle">Новомин</div>
+              <div class="catalog-item__description">Антиоксидантный комплекс</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+
+            <div class="catalog-item__content_description">
+              <!-- Второй блок с описанием товара. Этот блок по умолчанию скрыт через overflow: hidden-->
+              Комплекс для проведения экспресс-курса поддержки иммунитета в период эпидемии гриппа и простуды!
+              Активные компоненты помогают противостоять вирусным и бактериальным заболеваниям.
+              <br><br>
+              Активные компоненты, входящие в состав:
+              <ul>
+                <li>Витамин А (ретинола ацетат)</li>
+                <li>Витамин Е (токоферола ацетат)</li>
+                <li>Витамин С</li>
+              </ul>
+              <a href="#" class="catalog-item__back">Назад</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="catalog-item__footer">
+            <a href="https://ru.siberianhealth.com/ru/shop/catalog/product/500020/?ref=2411888420" target="_blank">
+              <button class="button button_catalog">Купить</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2 карточка с товаром -->
+        <div class="catalog-item">
+
+          <div class="catalog-item__wrapper">
+            <!-- Обёртка. В неё поожил два блока: 1. С картинкой товара. 2. С описанием товара. -->
+            <div class="catalog-item__content catalog-item__content_active">
+              <!-- Первый блок с картинкой товара. -->
+              <img src="img/СoreNRG.png" alt="СoreNRG" class="catalog-item__img">
+              <div class="catalog-item__subtitle">СoreNRG</div>
+              <div class="catalog-item__description">Универсальный иммунобустер</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+
+            <div class="catalog-item__content_description">
+              <!-- Второй блок с описанием товара. Этот блок по умолчанию скрыт через overflow: hidden-->
+              Универсальный иммунобустер CoreNRG – это быстрое и удобное решение:
+              <ul>
+                <li>при стрессах</li>
+                <li>смене часовых поясов и климатических зон</li>
+                <li>экзаменах и тяжелой работе</li>
+                <li>экологических и токсических нагрузках</li>
+                <li>упадке сил и плохом настроении</li>
+                <li>любых хронических истощающих состояниях</li>
+              </ul>
+              <a href="#" class="catalog-item__back">Назад</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="catalog-item__footer">
+            <a href="https://ru.siberianhealth.com/ru/shop/catalog/product/500327/?ref=2411888420" target="_blank">
+              <button class="button button_catalog">Купить</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 карточка с товаром -->
+        <div class="catalog-item">
+
+          <div class="catalog-item__wrapper">
+            <!-- Обёртка. В неё поожил два блока: 1. С картинкой товара. 2. С описанием товара. -->
+            <div class="catalog-item__content catalog-item__content_active">
+              <!-- Первый блок с картинкой товара. -->
+              <img src="img/magazine.jpg" alt="catalog" class="catalog-item__img">
+              <div class="catalog-item__subtitle">Другие</div>
+              <div class="catalog-item__description">Полный каталог товаров</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+
+            <div class="catalog-item__content_description">
+              <!-- Второй блок с описанием товара. Этот блок по умолчанию скрыт через overflow: hidden-->
+              Вы можете ознакомиться с остальными товарами категории "Здоровье" в каталоге, нажав кнопку "Каталог" ниже.
+              <a href="#" class="catalog-item__back">Назад</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="catalog-item__footer">
+            <a href="https://ru.siberianhealth.com/ru/shop/catalog/category/2/?ref=2411888420" target="_blank">
+              <button class="button button_catalog">Каталог</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вторая вкладка - Спорт -->
+      <div class="catalog__content">
+        <!-- 1 карточка с товаром -->
+        <div class="catalog-item">
+
+          <div class="catalog-item__wrapper">
+            <!-- Обёртка. В неё поожил два блока: 1. С картинкой товара. 2. С описанием товара. -->
+            <div class="catalog-item__content catalog-item__content_active">
+              <!-- Первый блок с картинкой товара. -->
+              <img src="img/omega3.png" alt="omega3" class="catalog-item__img">
+              <div class="catalog-item__subtitle">Омега-3 Ультра</div>
+              <div class="catalog-item__description">2,1 г важнейших омега-3 кислот</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+
+            <div class="catalog-item__content_description">
+              <!-- Второй блок с описанием товара. Этот блок по умолчанию скрыт через overflow: hidden-->
+              Максимум омега-3 кислот для мощной поддержки организма во время интенсивных физических нагрузок:
+              <ul>
+                <li>Восстановление мышц</li>
+                <li>Профилактика травм</li>
+                <li>Защита сердца</li>
+                <li>Снижение веса</li>
+                <li>Поддержка мозга</li>
+              </ul>
+              <a href="#" class="catalog-item__back">Назад</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="catalog-item__footer">
+            <a href="https://ru.siberianhealth.com/ru/shop/catalog/product/500484/?ref=2411888420" target="_blank">
+              <button class="button button_catalog">Купить</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2 карточка с товаром -->
+        <div class="catalog-item">
+
+          <div class="catalog-item__wrapper">
+            <!-- Обёртка. В неё поожил два блока: 1. С картинкой товара. 2. С описанием товара. -->
+            <div class="catalog-item__content catalog-item__content_active">
+              <!-- Первый блок с картинкой товара. -->
+              <img src="img/protein.png" alt="Protein" class="catalog-item__img">
+              <div class="catalog-item__subtitle">PROTEIN</div>
+              <div class="catalog-item__description">Мультикомпонентный протеин</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+
+            <div class="catalog-item__content_description">
+              <!-- Второй блок с описанием товара. Этот блок по умолчанию скрыт через overflow: hidden-->
+              Строительный материал для ваших мышц!
+              <ul>
+                <li>Абсолютная натуральность</li>
+                <li>Максимальная пищевая польза</li>
+                <li>Одно из самых лучших соотношений цены и качества</li>
+              </ul>
+              <a href="#" class="catalog-item__back">Назад</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="catalog-item__footer">
+            <a href="https://ru.siberianhealth.com/ru/shop/catalog/product/500270/?ref=2411888420" target="_blank">
+              <button class="button button_catalog">Купить</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 карточка с товаром -->
+        <div class="catalog-item">
+
+          <div class="catalog-item__wrapper">
+            <!-- Обёртка. В неё поожил два блока: 1. С картинкой товара. 2. С описанием товара. -->
+            <div class="catalog-item__content catalog-item__content_active">
+              <!-- Первый блок с картинкой товара. -->
+              <img src="img/magazine.jpg" alt="catalog" class="catalog-item__img">
+              <div class="catalog-item__subtitle">Другие</div>
+              <div class="catalog-item__description">Полный каталог товаров</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+
+            <div class="catalog-item__content_description">
+              <!-- Второй блок с описанием товара. Этот блок по умолчанию скрыт через overflow: hidden-->
+              Вы можете ознакомиться с остальными товарами категории "Спорт" в каталоге, нажав кнопку "Каталог" ниже.
+              <a href="#" class="catalog-item__back">Назад</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="catalog-item__footer">
+            <a href="https://ru.siberianhealth.com/ru/shop/catalog/category/263/?ref=2411888420" target="_blank">
+              <button class="button button_catalog">Каталог</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Третья вкладка - Питание -->
+      <div class="catalog__content">
+        <!-- 1 карточка с товаром -->
+        <div class="catalog-item">
+
+          <div class="catalog-item__wrapper">
+            <!-- Обёртка. В неё поожил два блока: 1. С картинкой товара. 2. С описанием товара. -->
+            <div class="catalog-item__content catalog-item__content_active">
+              <!-- Первый блок с картинкой товара. -->
+              <img src="img/YooGo.png" alt="YooGo" class="catalog-item__img">
+              <div class="catalog-item__subtitle">Мармелад - YooGo</div>
+              <div class="catalog-item__description">Жевательный мармелад с кальцием</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+
+            <div class="catalog-item__content_description">
+              <!-- Второй блок с описанием товара. Этот блок по умолчанию скрыт через overflow: hidden-->
+              Натуральный жевательный мармелад, обогащенный кальцием и витамином D3.
+              <ul>
+                <li>Кальций необходим для укрепления костной системы, зубов, ногтей и волос</li>
+                <li>Витамин D3 способствует лучшему усвоению кальция, помогает ускорить метаболизм и регулирует
+                  углеводный обмен</li>
+              </ul>
+              <a href="#" class="catalog-item__back">Назад</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="catalog-item__footer">
+            <a href="https://ru.siberianhealth.com/ru/shop/catalog/product/500426/?ref=2411888420" target="_blank">
+              <button class="button button_catalog">Купить</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2 карточка с товаром -->
+        <div class="catalog-item">
+
+          <div class="catalog-item__wrapper">
+            <!-- Обёртка. В неё поожил два блока: 1. С картинкой товара. 2. С описанием товара. -->
+            <div class="catalog-item__content catalog-item__content_active">
+              <!-- Первый блок с картинкой товара. -->
+              <img src="img/YoungAndBeauty.png" alt="YoungAndBeauty" class="catalog-item__img">
+              <div class="catalog-item__subtitle">Напиток</div>
+              <div class="catalog-item__description">Красота и молодость</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+
+            <div class="catalog-item__content_description">
+              <!-- Второй блок с описанием товара. Этот блок по умолчанию скрыт через overflow: hidden-->
+              Напиток с коллагеном и гиалуроновой кислотой придаст коже упругость и бархатистость, насытит ее влагой и
+              наполнит здоровым сиянием.
+              <ul>
+                <li>Пептидный коллаген Peptinex™</li>
+                <li>Гиалуроновая кислота ExceptionHyal® Full</li>
+                <li>Природный витамин С</li>
+              </ul>
+              <a href="#" class="catalog-item__back">Назад</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="catalog-item__footer">
+            <a href="https://ru.siberianhealth.com/ru/shop/catalog/product/500513/?ref=2411888420" target="_blank">
+              <button class="button button_catalog">Купить</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3 карточка с товаром -->
+        <div class="catalog-item">
+
+          <div class="catalog-item__wrapper">
+            <!-- Обёртка. В неё поожил два блока: 1. С картинкой товара. 2. С описанием товара. -->
+            <div class="catalog-item__content catalog-item__content_active">
+              <!-- Первый блок с картинкой товара. -->
+              <img src="img/magazine.jpg" alt="catalog" class="catalog-item__img">
+              <div class="catalog-item__subtitle">Другие</div>
+              <div class="catalog-item__description">Полный каталог товаров</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+
+            <div class="catalog-item__content_description">
+              <!-- Второй блок с описанием товара. Этот блок по умолчанию скрыт через overflow: hidden-->
+              Вы можете ознакомиться с остальными товарами категории "Питание" в каталоге, нажав кнопку "Каталог" ниже.
+              <a href="#" class="catalog-item__back">Назад</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="catalog-item__footer">
+            <a href="https://ru.siberianhealth.com/ru/shop/catalog/category/319/?ref=2411888420" target="_blank">
+              <button class="button button_catalog">Каталог</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Шестая секция с предложением -->
+  <section class="offer">
+    <div class="conteiner">
+      <h2 class="title">Уникальные предложения</h2>
+      <div class="offer__wrapper">
+        <!-- Предложение на скидку -->
+        <div class="offer__sale">
+          <div class="offer__sale_title">Клуб Привилегированных клиентов</div>
+          <div class="offer__sale_subtitle">Получай кешбэк до 15% с каждой покупки!</div>
+          <a href="https://ru.siberianhealth.com/ru/privileged-client/?ref=2411888420" target="_blank">
+            <button data-modal="consultation" class="button button_main">
+              Получить скидку
+            </button>
+          </a>
+        </div>
+
+        <!-- Предложение о работе -->
+        <div class="offer__business">
+          <div class="offer__business_title">Сотрудничество с компанией и возможности развития собственного бизнеса
+          </div>
+          <div class="offer__business_subtitle">Твой доход: выбери ближайшую цель</div>
+          <a href="https://ru.siberianhealth.com/ru/business-new/?ref=2411888420" target="_blank">
+            <button data-modal="consultation" class="button button_main">
+              Узнать подробнее
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cекция с картой -->
+  <footer class="footer">
+    <!-- <div class="footer__map"></div> -->
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A49ed52dfb1c7f7c5672fed0459c2fe23a6ef818139f8131b69197fc14992ab7a&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=false"></script>
+    <div class="footer__info">
+
+    </div>
+  </footer>
+
+  <!-- Копирайтинг -->
+  <section class="copyright">
+    <div class="conteiner">
+      <div class="copyright__wrapper">
+        <p>© Copyright 2020</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальные окна -->
+  <div class="overlay">
+    <!-- Затемнение -->
+    <div class="modal" id="consultation">
+      <div class="modal__close">&times;</div> <!--  Символ html &times; - крестик -->
+      <div class="modal__subtitle">Просто заполните форму заявки</div>
+      <div class="modal__description">и мы вам перезвоним</div>
+      <form class="feed_form" action="#">
+        <input name="name" required placeholder="Ваше имя" type="text">
+        <input name="phone" type="number" required placeholder="Ваш телефон">
+        <input name="email" required placeholder="Ваш E-mail" type="email">
+        <!-- <input type="submit" value="Заказать консультацию"> -->
+        <button class="button button_main button_form">Заказать консультацию</button>
+      </form>
+    </div>
+
+
+    <div class="modal modal__mini" id="thanks">
+      <div class="modal__close">&times;</div> <!--  Символ html &times; - крестик -->
+      <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+      <div class="modal__description">Наш менеджер свяжется с вами в ближайшее время</div>
+    </div>
+  </div>
+
+  <!-- Кнопка вверх -->
+  <a href="#up" class="pageup">
+    <img src="img/chevron-circle-up-solid.svg" alt="up">
+  </a>
+
+  <!-- Подключение скриптов -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- Слайдер. Сначала подключаются библиотеки. -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- Слайдер -->
+  <script src="js/slick.min.js"></script> <!-- Слайдер -->
+  <script src="js/jquery.maskedinput.js"></script> <!-- Маска ввода номера телефона -->
+  <script src="js/jquery.validate.min.js"></script> <!-- Валидация формы ввода -->
+  <script src="js/wow.min.js"></script> <!-- Анимация секций, работает в связке с animate.css -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
