@@ -18,5 +18,5 @@ $message = "<p>Новый заказ</p>
 
 mail( "socsetbus@mail.ru", "Новый заказ",
     $message, $headers );
-  header( "Location: http://f0433684.xsph.ru/7_spasibo.html" );
+  header( "Location: https://dementevaleksander.github.io/31_smm/7_spasibo.html" );
 ?>
