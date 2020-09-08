@@ -17,10 +17,10 @@
 
 <!--   Разработка сайта: Дементьев Александр Андреевич. https://vk.com/ya_sanya_ya -->
 <meta name="author" content="Dementev Alexandr Andreevich">
-
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <!--   Подключение CSS  и шрифтов -->
 <link rel="stylesheet" href="css/style.css" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
 <!--  Подключение JQuery из хранилища Гугл -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
     <section id="header" class="header"> <!-- Логотип, меню, заголовок, шапка -->         
         <div class="layout">
             <a href="#header" title="Работа онлайн"><img src="images/logo.png" alt="" /></a>
-            <menu>
+            <menu class="service_flexbox_wrapper">
                 <li><a class="topLink" href="#header">Начало</a></li>
                 <li><a class="topLink" href="#service">Услуги</a></li>
                 <li><a class="topLink" href="#portfolio">Преимущества</a></li>
@@ -63,22 +63,24 @@ $(document).ready(function() {
         <div class="layout">
             <h2>Услуги</h2>
             <span class="headline">Чем мы можем вам помочь</span>
-            <div class="box3">
-                <img src="images/obychenie.png" />
-                <h4>Обучение онлайн</h4>
-                <p>Мы проводим обучение по заработку через сеть интернет</p>
-            </div>
-            
-            <div class="box3">
-                <img src="images/nastavnik.png" />
-                <h4>Наставничество</h4>
-                <p>За каждым случашетелем закрепляется наставник, который помогает Вам в ходе обучения</p>
-            </div>
-            
-            <div class="box3">
-                <img src="images/podderjka.png" />
-                <h4>Поддержка</h4>
-                <p>Мы помогаем Вам добиться результатов и выйти на реальный доход</p>
+            <div class="service_flexbox_wrapper">
+                <div class="service_flexbox_wrapper_box3">
+                    <img src="images/obychenie.png" />
+                    <h4>Обучение онлайн</h4>
+                    <p>Мы проводим обучение по заработку через сеть интернет</p>
+                </div>
+                
+                <div class="service_flexbox_wrapper_box3">
+                    <img src="images/nastavnik.png" />
+                    <h4>Наставничество</h4>
+                    <p>За каждым случашетелем закрепляется наставник, который помогает Вам в ходе обучения</p>
+                </div>
+                
+                <div class="service_flexbox_wrapper_box3">
+                    <img src="images/podderjka.png" />
+                    <h4>Поддержка</h4>
+                    <p>Мы помогаем Вам добиться результатов и выйти на реальный доход</p>
+                </div>
             </div>
         </div>
     </section>
@@ -190,45 +192,44 @@ $(document).ready(function() {
         </div>
     </section> 
     
-    
-    
-    
     <section id="team"> <!-- Наша команда -->
         <div class="layout">
             <h2>Наша команда</h2>
             <span class="headline">Наши ведущие специалисты</span>
-            
-            <div class="box3">
-                <img src="images/Command1.jpg" />
-                <h4>Ася</h4>
-                <p>Лидер команды</p>
-                <div class="social">
-                    <a class="vk" href="https://vk.com/ylej_marketiljgov" target="_blank"></a>
-                    <a class="inst" href="https://www.instagram.com/as_asja?r=nametag" target="_blank"></a>
-                    <a class="wa" href="https://wa.me/79852168748" target="_blank"></a>
-                    <a class="youtube" href="https://www.youtube.com/channel/UCeiHtvZQwqonRJO_R1xmnfw" target="_blank"></a>
+            <div class="service_flexbox_wrapper">
+                <div class="service_flexbox_wrapper_box3">
+                    <img src="images/Command1.jpg" />
+                    <h4>Ася</h4>
+                    <p>Лидер команды</p>
+                    <div class="social">
+                        <a class="vk" href="https://vk.com/ylej_marketiljgov" target="_blank"></a>
+                        <a class="inst" href="https://www.instagram.com/as_asja?r=nametag" target="_blank"></a>
+                        <a class="wa" href="https://wa.me/79852168748" target="_blank"></a>
+                        <a class="youtube" href="https://www.youtube.com/channel/UCeiHtvZQwqonRJO_R1xmnfw" target="_blank"></a>
+                    </div>
                 </div>
-            </div>
+                    
+                <div class="service_flexbox_wrapper_box3">
+                    <img src="images/Command2.JPG" />
+                    <h4>Анастасия</h4>
+                    <p>Маркетолог</p>
+                    <div class="social">
+                        <a class="vk" href="#team"></a>
+                        <a class="inst" href="#team"></a>
+                    </div>
+                </div>
                 
-            <div class="box3">
-                <img src="images/Command2.JPG" />
-                <h4>Анастасия</h4>
-                <p>Маркетолог</p>
-                <div class="social">
-                    <a class="vk" href="#team"></a>
-                    <a class="inst" href="#team"></a>
+                <div class="service_flexbox_wrapper_box3">
+                    <img src="images/Command3.JPG" />
+                    <h4>Nastya</h4>
+                    <p>Наставник</p>
+                    <div class="social">
+                        <a class="vk" href="#team"></a>
+                        <a class="inst" href="#team"></a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="box3">
-                <img src="images/Command3.JPG" />
-                <h4>Nastya</h4>
-                <p>Наставник</p>
-                <div class="social">
-                    <a class="vk" href="#team"></a>
-                    <a class="inst" href="#team"></a>
-                </div>
-            </div>
+
             <div class="clr"></div>
             <p class="resume">Мы любим свою работу и делаем её качественно.</p>
         </div>

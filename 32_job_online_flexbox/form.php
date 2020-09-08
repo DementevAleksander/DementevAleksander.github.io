@@ -12,15 +12,15 @@ $campaign = htmlspecialchars ($_POST['campaign']);
 $term = htmlspecialchars ($_POST['term']);
 
 //*  Запись в тектовый файл */
-$file = "contact.csv";
-$contact = $source. ";" .$medium. ";" .$campaign. ";" .$content. ";" .$term. ";" .$email. ";" .$tel. ";" .$name. ";" . "\n";
-file_put_contents($file, $contact, FILE_APPEND);
+// $file = "contact.csv";
+// $contact = $source. ";" .$medium. ";" .$campaign. ";" .$content. ";" .$term. ";" .$email. ";" .$tel. ";" .$name. ";" . "\n";
+// file_put_contents($file, $contact, FILE_APPEND);
 
 
 // Формируем заголовки письма
 $headers= "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html;charset=utf-8 \r\n";
-// $headers .= "From: Дементьева Анастасия <socsetbus@mail.ru>\r\n";
+// $headers .= "From: <socsetbus@mail.ru>\r\n";
 // $headers .= "Reply-To: socsetbus@mail.ru\r\n";
 
 // Составляем текст письма админу
