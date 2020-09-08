@@ -618,11 +618,11 @@ footer .box3 .social {
 }
 
 .level:nth-child(odd) img {
-    margin: 0 0 2em 2em;
+    margin: 0 0 2em 0.5em;
 }
 
 .level:nth-child(even) img {
-    margin: 0 2em 2em 0;
+    margin: 0 2em 5em 0;
 }
 
 .level {
@@ -696,11 +696,11 @@ footer .box3 .social {
     }
 
     .level:nth-child(odd) img {
-        margin: 0 0 2em 2em;
+        margin: 0 0 2em 0.5em;
     }
-
+    
     .level:nth-child(even) img {
-        margin: 0 2em 2em 0;
+        margin: 0 2em 5em 0;
     }
 
     .level {
@@ -790,11 +790,11 @@ footer .box3 .social {
 }
 
 .level:nth-child(odd) img {
-    margin: 0 0 2em 2em;
+    margin: 0 0 2em 0.5em;
 }
 
 .level:nth-child(even) img {
-    margin: 0 2em 2em 0;
+    margin: 0 2em 5em 0;
 }
 
 .level {
