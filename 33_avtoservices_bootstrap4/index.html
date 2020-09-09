@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Для совместимости с IE -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet" /> <!--   Подключение шрифтов fonts.google.com -->
+    <!-- Bootstrap CSS -->
+    <!-- При подключении Bootstrap CSS не нужно сбрасывать стили и не нужно подключать normalize.min.css-->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">  <!-- Сетка с колонками -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Dementev Alexandr"> <!-- Автор -->
+    <title>Сеть АвтоРемонт</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        
+        <div class="container">
+          <ul class="menu">
+            <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
+            <li class="menu_item"><a href="#description" class="menu_link">О компании</a></li>
+            <li class="menu_item"><a href="#advantage" class="menu_link">Преимущества</a></li>
+            <li class="menu_item"><a href="#requirements" class="menu_link">Услуги</a></li>
+            <li class="menu_item"><a href="#footer" class="menu_link">Контакты</a></li>
+            <li class="menu_item"><a href="#" class="menu_link" data-modal="consultation">Оставить заявку</a></li>
+          </ul>
+        </div>
+
+        <div class="button_menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </nav>
+
+      <div class="subheader">
+        <div class="container">
+          <div class="row"> <!-- Для того, чтобы все блоки колонок располагались в одну троку-->
+            <div class="col-6 col-md-4 offset-md-1"> <!-- col-md-4 - блок занимает 4 колонки, offset-md-1 - отступ в одну колонку, md - для мобильных экранов -->
+              <a href="#" class="subheader_logo"><img src="img/logo.png" alt="Логотип"></a>
+              <div class="subheader_official">Официальный представитель в России</div>
+            </div>
+            <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+              <div class="subheader_call">Звоните нам ежедневно</div>
+              <a href="tel:89851379999" class="subheader_phone">8(985)137-9999</a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+              <a href="tel:89851379999" class="xs-visible subheader_phone">8(985)137-9999</a>
+              <button class="subheader_btn" data-modal="consultation">Заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="description" id="description">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
+            <h1 class="description_header">КОМПАНИЯ АвтоРемонт!</h1>
+            <h2 class="description_subheader">Нам доверяют тысячи автолюбителей!</h2>
+            <div class="description_description">
+              Сервис АвтоРемонт динамически развивающаяся компания. Автосервис на рынке занимает лидирующее место среди
+              автомастерских компаний. Компания абсолютно прозрачная, вы можете контролировать все процессы попивая чашку кофе. Бонуcная система.
+              <br><br>
+              Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Мы выполняем ремонт точно и в указанный срок.
+            </div>
+              <button class="description_btn" data-modal="consultation">ОТПРАВИТЬ ЗАЯВКУ!</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------  -->
+    <section class="advantage" id="advantage">
+
+        <div class="container">
+          <div class="advantage_div_p"><p class="advantage_p">Преимущества</p></div>
+          <div class="advantage_сauses">8 причин доверить ремонт автомобиля именно нам</div>
+          <div class="row">
+            <div class="col-md-6">
+                <div class="advantage_list">
+                  <div class="advantage_img"><img src="img/Layer_8.png" alt="8"></div>
+                  <div class="advantage_disk">
+                    <div class="advantage_description">Круглосуточная поддержка</div>
+                    <div class="advantage_description2">
+                      В АвтоРемонт действует круглосуточная поддержка автовладельцев по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.</div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="advantage_list">
+                <div class="advantage_img"><img src="img/Layer_1.png" alt="1"></div>
+                <div class="advantage_disk">
+                  <div class="advantage_description">Никаких наличных, оплата происходит через приложение</div>
+                  <div class="advantage_description2">Стоимость ремонта оплачивается автовладельцем с привязанной банковской карты, т.е. нет никаких рисков связанных с наличностью как для автовладельцем, так и для мастера. Вам не нужно искать мелкие деньги для размена.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="advantage_list">
+                <div class="advantage_img"><img src="img/Layer_2.png" alt="2"></div>
+                <div class="advantage_disk">
+                  <div class="advantage_description">Всегда большое количество заказов</div>
+                  <div class="advantage_description2">
+                    Нам доверят тысячи автовладельцев. Поэтому у нас больщой опыт работы с различными автомобилями любой марки и любого года выпуска. Ремонт для нас в удовольствие.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="advantage_list">
+                <div class="advantage_img"><img src="img/Layer_3.png" alt="3"></div>
+                <div class="advantage_disk">
+                  <div class="advantage_description">Скидка 8% + БОНУСЫ</div>
+                  <div class="advantage_description2">
+                    У нас действует максимальная скидка и мы выплачиваем бонусы за каждый ремонт, некоторые наши конкуренты оставляют скидки и бонусы себе. Мы работаем честно и с нами автовладельцы экономят больше!</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="advantage_list">
+                <div class="advantage_img"><img src="img/Layer_4.png" alt="4"></div>
+                <div class="advantage_disk">
+                  <div class="advantage_description">Ремонт любой сложности</div>
+                  <div class="advantage_description2">Мы выполняем ремонт автомобилей любой сложности. На нашей практике ещё не было случаев, чтобы мы отдали машину автовладельцу в неисправном или недоделанном состоянии.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="advantage_list">
+                <div class="advantage_img"><img src="img/Layer_5.png" alt="5"></div>
+                <div class="advantage_disk">
+                  <div class="advantage_description">Низкая стоимость выполнения работ</div>
+                  <div class="advantage_description2">
+                    У нас самая низкая стоимость работ! Если вы нашли стоимость работы ниже, чем у нас, то мы вернём вам разницу.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="advantage_list">
+                <div class="advantage_img"><img src="img/Layer_6.png" alt="6"></div>
+                <div class="advantage_disk">
+                  <div class="advantage_description">Круглосуточная работа</div>
+                  <div class="advantage_description2">
+                    В любое время суток, Вы просто нажимаете кнопку с поиском свободного сервиса, приложение показывает на карте куда можно подьехать на диагностику или ремонт автомобиля. </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="advantage_list">
+                <div class="advantage_img"><img src="img/Layer_7.png" alt="7"></div>
+                <div class="advantage_disk">
+                  <div class="advantage_description">Комфортное, прозрачное и простое подключение</div>
+                  <div class="advantage_description2">
+                    Если у вас трудности с подключением прилоения, то мы помогаем подключить приложение дистанционно и бесплатно. Вам нет необходимости для этого приезжать к нам!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- -----------------------------------------  -->
+    <section class="mobile">
+      <div class="container">
+        <div class="advantage_div_p"><p class="advantage_p">Преимущества</p></div>
+        <div class="advantage_сauses">мобильное приложение АвтоСервис</div>
+        <div class="sub_advantage">Сделайте заказ, используя свой мобильный телефон, и привезите автомобиль на диагностику</div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="mobile_box mobile_box_img1">
+              <div class="mobile_desc">оформление заказа одним касанием</div>
+              <div class="mobile_plus"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mobile_box mobile_box_img2">
+              <div class="mobile_desc">надежный сервис</div>
+              <div class="mobile_plus"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mobile_box mobile_box_img3">
+              <div class="mobile_desc">прозрачные цены</div>
+              <div class="mobile_plus"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mobile_box mobile_box_img4">
+              <div class="mobile_desc">безналичная оплата</div>
+              <div class="mobile_plus"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mobile_box mobile_box_img5">
+              <div class="mobile_desc">обратная связь</div>
+              <div class="mobile_plus"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mobile_box mobile_box_img6">
+              <div class="mobile_desc">разделить стоимость ремонта</div>
+              <div class="mobile_plus"></div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- -----------------------------------------  -->    
+    <section class="choice">
+      <div class="container">
+        <div class="choice_div_p"><p class="advantage_p">Преимущества</p></div>
+        <div class="choice_сauses">Выбор - отличная штука!</div>
+        <div class="sub_choice">Закажите авторемонт, который подходит вам по сроку и бюджету</div>
+      </div>
+      <div class="car"><img src="img/Car.png" alt="Машинка"></div>
+      <div class="car_display_mobile best_desc">
+        Подберём свободный сервис в течение часа! У нас лучше, быстрее и дешевле!
+      </div>
+    </section>
+
+    <div class="car_down">
+      <div class="best_desc">
+        Подберём свободный сервис в течение часа! У нас лучше, быстрее и дешевле!
+      </div>
+    </div>
+
+    <!-- -----------------------------------------  -->
+    <section class="requirements" id="requirements">
+      <div class="container">
+        <div class="advantage_div_p"><p class="advantage_p">Услуги</p></div>
+        <div class="advantage_сauses">Оказываемые услуги</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="requirements_block">
+              <div class="requirements_title">
+                Слесарный ремонт:
+              </div>
+              <ul class="requirements_list">
+                <li>Капитальный ремонт двигателя</li>
+                <li>Замена двигателя</li>
+                <li>Замена прокладки впускного/выпускного коллектора</li>
+                <li>Замена маслосъёмных колпачков</li>
+                <li>Регулировка клапанов</li>
+                <li>Замена шкива коленвала</li>
+                <li>Замена опоры двигателя и другие работы...</li>
+              </ul>
+              <div class="requirements_desc">
+                Ремонт от 700 рублей
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="requirements_block">
+              <div class="requirements_title">
+                Заправка и ремонт кондиционера:
+              </div>
+              <ul class="requirements_list">
+                <li>Дигностика системы</li>
+                <li>Заправка кондиционера хладагентом</li>
+                <li>Ремонтные работы</li>
+                <li>Сварка труб аргоном</li>
+                <li>Ремонт шлангов системы охлаждения</li>
+                <li>Ремонт радиатора кондиционера</li>
+                <li>Промывка системы охлаждения и многое другое...</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="requirements_block requirements_block_nomarginbottun warning">
+              <div class="requirements_title">
+                Дигностика и электрика:
+              </div>
+              <ul class="requirements_list warning">
+                <li>Диагностика АКПП</li>
+                <li>Адаптация блоков он-лайн</li>
+                <li>Адаптация АКБ</li>
+                <li>Дигностика электроцепи</li>
+                <li>Диагностика блоков управления и другие работы...</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="requirements_block requirements_block_nomarginbottun warning">
+              <div class="requirements_title">
+                Замена и ремонт стёкол:
+              </div>
+              <ul class="requirements_list warning">
+                <li>Замена стекла клееного</li>
+                <li>Замена стекла в резиновый кплотнитель</li>
+                <li>Замена стекла боковины</li>
+                <li>Переустановка стекла</li>
+                <li>Нанесение защитного покрытия антидождь</li>
+                <li>Ремонт трещины стекла и многое другое...</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------  -->
+    <section class="map">
+      <div class="container">
+        <div class="map_container_img">
+          <div class="map_container_block">
+            <div class="map_container_block_class"><p class="map_container_block_p">Города</p></div>
+            <div class="map_сauses">По всему миру</div>
+            <div class="map_sub_сauses">Мы в вашем городе и по всему миру</div>
+            <div class="map_city"> <a href="#" data-modal="consultation">Посмотреть все города</a> </div>
+          </div>
+        </div>          
+      </div>
+    </section>
+
+    <!-- -----------------------------------------  -->
+    <footer class="footer" id="footer">
+
+      <div class="footer_box_line"></div>
+
+      <div class="footer_box_all">
+        <div class="footer_box">
+          <div class="socset">
+            <div class="fb"><a alt="1"><img src="img/fb.png" alt="fb" class="socset_img" data-modal="consultation"></a></div>
+            <div class="tw"><a alt="1"><img src="img/tw.png" alt="tw" class="socset_img" data-modal="consultation"></a></div>
+            <div class="in"><a alt="1"><img src="img/in.png" alt="in" class="socset_img" data-modal="consultation"></a></div>
+            <div class="insta"><a alt="1"><img src="img/insta.png" alt="insta" class="socset_img" data-modal="consultation"></a></div>
+          </div>
+        </div>
+
+        <div class="footer_box">
+
+          <div class="footer_box_1"> 
+            <ul class="footer_menu_up">
+              <li class="footer_menu_up_li"><a href="#" class="footer_menu_up_link">на главную</a></li>
+              <li class="footer_menu_up_li"><a class="footer_menu_up_link" data-modal="consultation">города</a></li>
+              <li class="footer_menu_up_li"><a class="footer_menu_up_link" data-modal="consultation">для водителей</a></li>
+            </ul>
+          </div>  
+
+          <div class="footer_box_2">
+            <ul class="footer_menu">
+              <li class="footer_menu_li"><a class="footer_menu_link" data-modal="consultation">центр поддержки</a></li>
+              <li class="footer_menu_li"><a class="footer_menu_link" data-modal="consultation">вакансии</a></li>
+              <li class="footer_menu_li"><a class="footer_menu_link" data-modal="consultation">разработчики</a></li>
+              <li class="footer_menu_li"><a class="footer_menu_link" data-modal="consultation">блог</a></li>
+              <li class="footer_menu_li"><a class="footer_menu_link" data-modal="consultation">о нас</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_menu_down">
+            <a href="#" class="footer_menu_down_ul_link" data-modal="consultation">Русский</a>
+          </div>
+        </div>
+
+        <div class="footer_box">
+          <div class="socset_right">
+            <div class="appstore"><a alt="1"><img src="img/Footer_right_1.png" alt="appstore" class="socset_right_img" data-modal="consultation"></a></div>
+            <div class="googleplay"><a alt="1" data-modal="consultation"><img src="img/Footer_right_2.png" alt="googleplay" class="socset_right_img" data-modal="consultation"></a></div>
+            <div class="windowsstore"><a alt="1"><img src="img/Footer_right_3.png" alt="windowsstore" class="socset_right_img" data-modal="consultation"></a></div>
+          </div>
+        </div>
+      </div>
+
+
+  </footer>
+
+    <section class="border"></section>
+
+      <!-- Модальные окна -->
+  <div class="overlay">
+    <!-- Затемнение -->
+    <div class="modal" id="consultation">
+      <div class="modal__close">&times;</div> <!--  Символ html &times; - крестик -->
+      <div class="modal__subtitle">Просто заполните форму заявки</div>
+      <div class="modal__description">и мы вам перезвоним</div>
+      <form class="feed_form" action="#">
+        <input name="name" required placeholder="Ваше имя" type="text">
+        <input name="phone" type="number" required placeholder="Ваш телефон">
+        <input name="email" required placeholder="Ваш E-mail" type="email">
+        <!-- <input type="submit" value="Заказать консультацию"> -->
+        <button class="button button_main button_form">Заказать консультацию</button>
+      </form>
+    </div>
+
+
+    <div class="modal modal__mini" id="thanks">
+      <div class="modal__close">&times;</div> <!--  Символ html &times; - крестик -->
+      <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+      <div class="modal__description">Наш менеджер свяжется с вами в ближайшее время</div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script> <!-- Маска ввода номера телефона -->
+  <script src="js/jquery.validate.min.js"></script> <!-- Валидация формы ввода -->
+  <script src="js/script.js"></script>
+
+  </body>
+</html>

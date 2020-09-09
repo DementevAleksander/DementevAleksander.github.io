@@ -1,0 +1,45 @@
+// Заголовок в виде кнопки	
+@mixin button
+	position: relative
+	margin: 0 auto
+	height: 24px
+	width: 112px
+	padding: 5px 12px
+	background-color: $black-color
+	color: $white-color
+	font-size: 11px
+	font-weight: 300
+	text-transform: uppercase
+	text-align: center
+	z-index: 2
+	cursor: pointer
+	&:hover
+		background-color: #1e6dc7
+
+// Заголовок под кнопкой
+@mixin title
+	position: relative
+	margin-bottom: 0
+	margin-top: 38px
+	color: #222222
+	font-size: 38px
+	line-height: 38px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	z-index: 2
+
+// Подзаголовок
+@mixin subtitle
+    font-size: 17px
+    text-align: center
+    color: #222222
+    margin-top: 19px
+
+@mixin button_tab
+	// если нужно убрать background-image, то нужно сначала использовать background-image:none.
+	&:hover //изменения при наведении
+		background-image: linear-gradient(to top, $blue-color 0%, #4c6dff 100%)
+	&:active // изменения, когда нажали на элемент и когда держим его
+		background-image: linear-gradient(to top, #fff34c 0%, #ee6a12 100%)
+	
