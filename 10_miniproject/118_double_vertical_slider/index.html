@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Вертикальный слайдер</title>
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="left-slide">
+        <div style="background-color: #FD3555">
+          <h1>Пейзаж</h1>
+          <p>восход в горах</p>
+        </div>
+        <div style="background-color: #2A86BA">
+          <h1>Море</h1>
+          <p>мальдивские острова</p>
+        </div>
+        <div style="background-color: #0b6119">
+          <h1>Лес</h1>
+          <p>покрытый мхом</p>
+        </div>
+        <div style="background-color: #FFB866">
+          <h1>Пустыня</h1>
+          <p>песчаные дюны</p>
+        </div>
+      </div>
+      <div class="right-slide">
+        <div style="background-image: url('desert.jpg')"></div>
+        <div style="background-image: url('forest.jpg')"></div>
+        <div style="background-image: url('sea.jpg')"></div>
+        <div style="background-image: url('berg.jpg')"></div>
+      </div>
+      <div class="action-buttons">
+        <button class="down-button">
+          <i class="fas fa-arrow-down"></i>
+        </button>
+        <button class="up-button">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

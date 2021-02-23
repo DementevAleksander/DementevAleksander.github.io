@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255,250,83);
+  background: linear-gradient(25deg, rgba(255,250,83,1) 0%, rgba(254,178,64,1) 79%);
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h3 {
+  color: #fff;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.container {
+  width: 500px;
+}
+
+textarea {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+
+.css-button {
+  margin-top: 10px;
+	font-size: 14px;
+  font-weight: bold;
+  min-width: 200px;
+	border-radius: 8px;
+	border: solid 0px #79a919;
+	color: #FFFFFF;
+	padding: 9px 16px;
+	background: linear-gradient(180deg, #99cd32 5%, #79a919 100%);
+	box-shadow: 0px 10px 14px -7px #616174;
+	font-family: Arial;
+	cursor: pointer;
+	text-align: center;
+	user-select: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.css-button:hover {
+	background: linear-gradient(180deg, #79a919 5%, #99cd32 100%);
+}
+.css-button:active {
+	position: relative;
+	top: 1px;
+}
+
+.tag {
+  background-color: #f0932b;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #273c75;
+}
+
