@@ -36,7 +36,7 @@ nav {
 
 .menu_item {
   border-right: 2px dotted black;
-  padding-right: 28px;
+  padding-right: 50px;
 }
 
 .menu_item:last-child {
@@ -745,7 +745,7 @@ nav {
 
 @media (max-width: 1200px) {
   .menu_item {
-    padding-right: 20px;
+    padding-right: 35px;
   }
   .menu_link {
     font-size: 13px;
@@ -800,7 +800,7 @@ nav {
 
 @media (max-width: 991px) {
   .menu_item {
-    padding-right: 8px;
+    padding-right: 20px;
   }
   .menu_link {
     font-size: 10px;
