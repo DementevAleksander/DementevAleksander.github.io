@@ -100,7 +100,7 @@ h4 {
 /*  Размеры в адаптивном макете используются в условных единицах em для высоты, для ширыны проценты */
 
 .header {
-    background: url(../images/header.jpg) no-repeat;
+    background: url('../images/header.jpg') 100% 100%/cover no-repeat;
 }
 
 #header img {
@@ -388,7 +388,7 @@ h4 {
 }
 
 .youtube {
-    background: url(../images/youtube.png);
+    background: url('../images/youtube.png');
     background-position:0 0;
 }
 
@@ -397,8 +397,7 @@ h4 {
 }
 
 #contact {
-    background: no-repeat;
-    background-image: url("../images/message.jpg");
+    background: url('../images/message.jpg') 100% 100%/cover no-repeat;
     padding-bottom: 8em;
 }
 
@@ -426,7 +425,7 @@ h4 {
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
-    width: 80%;
+    width: 100%;
     background: #fff;
     border: none;
     padding: 1em 4%;
@@ -438,6 +437,12 @@ h4 {
 
 #contact textarea {
     height: 9.725em;
+    width: 92%;
+}
+
+ul {
+    list-style-type: none;
+    width: 92%;
 }
 
 
@@ -458,6 +463,34 @@ h4 {
 #contact input[type="submit"]:hover {
     background: #fec336;
 }
+
+.box_form_wrapper {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.box_form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
 
 footer {
     width: 100%;
@@ -500,12 +533,13 @@ footer .box3 .social {
 /*-----------------1920px -------------*/
 @media screen and (max-width:1920px), only screen and (max-device-width:1920px) 
 {
-    #map .layout {
+    /* #map .layout {
     width: 1840px;
-}
+} */
 
 #contact textarea {
     height: 9.125em;
+    width: 92%;
 }
 }
 
@@ -518,6 +552,7 @@ footer .box3 .social {
 
 #contact textarea {
     height: 12em;
+    width: 92%;
 }
 }
 
@@ -525,7 +560,7 @@ footer .box3 .social {
 @media screen and (max-width:1280px), only screen and (max-device-width:1280px) 
 {
     #map .layout {
-    width: 1100px;
+    width: 990px;
 }
 
 #contact textarea {
@@ -538,13 +573,21 @@ footer .box3 .social {
 @media screen and (max-width:1024px), only screen and (max-device-width:1024px) 
 {
     #map .layout {
-    width: 900px;
+    width: 800px;
 }
 
 #contact textarea {
     height: 9.725em;
+    width: 92%;
 }
 
+}
+
+@media (max-width:1024px)
+{
+    .layout {
+    width: 800px;
+}
 }
 
 
@@ -571,6 +614,7 @@ footer .box3 .social {
 
 #contact textarea {
     height: 9.725em;
+    width: 92%;
 }
 
 #header img {
@@ -603,6 +647,7 @@ footer .box3 .social {
 
 #contact textarea {
     height: 9.725em;
+    width: 92%;
 }
 
 #header img {
@@ -634,6 +679,13 @@ footer .box3 .social {
 }
 }
 
+@media (max-width:800px)
+{
+    .layout {
+    width: 650px;
+}
+}
+
 /*-----------------640px -------------*/
 @media (max-width: 641px) 
 {
@@ -641,6 +693,14 @@ footer .box3 .social {
         width: 600px;
     }
 
+    ul {
+        width: 100%;
+    }
+
+    .box_form {
+        width: 400px;
+        margin: 0 auto;
+    }
     
     #header img {
     width: 25%;
@@ -685,6 +745,7 @@ footer .box3 .social {
 
     #contact textarea {
         height: 5em;
+        width: 92%;
     }
 
     .level:nth-child(odd) h4 {
@@ -737,6 +798,7 @@ footer .box3 .social {
     #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
         padding: 0.5em 4%;
         margin-bottom: 0.5em;
+        width: 92%;
     }
 
     }
@@ -747,6 +809,10 @@ footer .box3 .social {
 {
 
 .layout {
+        width: 300px;
+    }
+
+    .box_form {
         width: 300px;
     }
     
@@ -841,6 +907,14 @@ h2 {
 
 .layout {
         width: 240px;
+    }
+
+    .button {
+        width: 215px;
+    }
+
+    .box_form {
+        width: 200px;
     }
     
     #header img {

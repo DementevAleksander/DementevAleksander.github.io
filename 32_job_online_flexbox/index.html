@@ -44,7 +44,6 @@ $(document).ready(function() {
 <body id="page">
     <section id="header" class="header"> <!-- Логотип, меню, заголовок, шапка -->         
         <div class="layout">
-            <a href="#header" title="Работа онлайн"><img src="images/logo.png" alt="" /></a>
             <menu class="service_flexbox_wrapper">
                 <li><a class="topLink" href="#header">Начало</a></li>
                 <li><a class="topLink" href="#service">Услуги</a></li>
@@ -240,8 +239,8 @@ $(document).ready(function() {
             <h2>Напишите нам</h2>
             <span class="headline">Остались вопросы? Пишите нам, мы с радостью на них ответим!</span>
         </div>
-        <form action="form.php" method="POST">
-            <div class="box2">
+        <form action="form.php" method="POST" class="box_form_wrapper">
+            <div class="box_form">
                 <ul>
                     <li><input type="text" name="text" placeholder="Ваше имя *" required /></li>
                     <li><input type="email" name="email" placeholder="Ваш e-mail *" required /></li>
@@ -254,10 +253,12 @@ $(document).ready(function() {
                     <input type="hidden" name="term" value="<?php echo $term ?>" />                
                 </ul>
             </div>
-            <div class="box2">
+            <div class="box_form">
                 <textarea name="message" placeholder="Ваш вопрос *" required></textarea>
             </div>
-            <input type="submit" class="button disabled" value="Отправить"  />
+            <div class="box_form">
+                <input type="submit" class="button disabled" value="Отправить"  />
+            </div>
         </form>
     </section>
     
