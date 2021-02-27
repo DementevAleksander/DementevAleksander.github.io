@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     modal('[data-modal]', '.modal', modalTimerId);
     forms('form', modalTimerId);
     tabs('.tabheader__item', '.tabcontent', '.tabheader', 'tabheader__item_active');
-    timer('.timer', '2020-12-31');
+    timer('.timer', '2021-12-31');
     slider({ //реструктуризация.
         conteiner: '.offer__slide',
         nextArrow: '.offer__slider-next',

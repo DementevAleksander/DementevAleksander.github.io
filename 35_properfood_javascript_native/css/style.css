@@ -27,3 +27,291 @@
     opacity: .5;
     transition: opacity .6s ease;
 }
+
+@media (max-width: 1240px) {
+
+
+    .header__left-block {
+        min-width: 300px;
+    }
+
+    .tabcontainer {
+        width: 800px;
+    }
+    .tabcontent__descr {
+        top: 270px;
+        right: -120px;
+        width: 345px;
+        height: 152px;
+        padding: 12px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .preview__life {
+        margin-left: 185px;
+    }
+
+    .preview {
+        padding: 10px 0 65px 0;
+    }
+
+    .offer .bgc_y {
+        width: 100%;
+    }
+
+    .offer .container {
+        padding: 0 50px;
+    }
+    .offer__slider {
+        width: 500px;
+    }
+
+    .calculating__subtitle {
+        font-size: 15px;
+    }
+    .calculating__choose-item {
+        width: 100px;
+        text-align: center;
+        font-size: 11px;
+    }
+    .calculating__choose_medium {
+        width: 320px;
+    }
+    .calculating__choose_big {
+        width: 320px;
+    }
+    .calculating__choose_big .calculating__choose-item {
+        width: 70px;
+        font-size: 11px;
+    }
+    .calculating__total {
+        width: 300px;
+    }
+    .calculating__choose-item {
+        padding: 0px 4px;
+    }
+    
+
+    .menu__field {
+        padding: 50px;
+    }
+
+    .menu__item {
+        width: 255px;
+    }
+
+    .order__form {
+        flex-direction: column;
+    }
+
+    .order__input {
+        margin-top: 20px;
+    }
+    .order__form img {
+        margin: 20px;
+    }
+
+    .promotion__timer .timer {
+        padding-left: 30px;
+    }
+
+    .promotion {
+        padding: 75px 50px 180px 45px;
+    }
+
+    .footer .container {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .btn {
+        width: 130px;
+        height: 50px;
+        font-size: 11px;
+    }
+    .tabcontainer {
+        width: 355px;
+    }
+    .tabheader {
+        padding: 5px 5px;
+    }
+    .tabheader__item {
+        font-size: 11px;
+    }
+    .preview__life {
+        font-size: 10px;
+        margin-left: 35px;
+        width: 70px;
+    }
+    .tabcontent__descr {
+        top: 164px;
+        right: -125px;
+        width: 270px;
+        height: 110px;
+        padding: 12px;
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .offer .container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer__descr {
+        font-size: 12px;
+        margin-top: 24px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .offer__text {
+        width: 300px;
+    }
+    .offer__slider {
+        width: 300px;
+    }
+    .offer__advantages-text {
+        font-size: 12px;
+    }
+
+    .calculating__divider {
+        width: 300px;
+    }
+
+    .menu .container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu__item {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .promotion__timer .timer__block span {
+        margin-top: 12px;
+        font-size: 24px;
+    }
+    .promotion__timer .timer__block {
+        width: 180px;
+        height: 75px;
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .promotion__timer .timer {
+        width: 215px;
+        margin: 15px auto;
+    }
+    .title {
+        font-size: 24px;
+    }
+
+    .promotion .container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promotion__text {
+        width: 90%;
+    }
+    .promotion__descr {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .promotion__descr span {
+        font-size: 20px;
+    }
+    .promotion__timer .timer {
+        padding-left: 5px;
+    }
+    .footer .subtitle {
+        font-size: 14px;
+    }
+    .footer .link {
+        font-size: 12px;
+    }
+    .header__left-block {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 425px) {
+    .promotion__timer .timer {
+        width: 155px;
+    }
+    .promotion__timer .timer__block {
+        font-size: 10px;
+    }
+    .tabcontainer {
+        width: 250px;
+    }
+    .tabcontent__descr {
+        top: 161px;
+        right: -145px;
+        width: 181px;
+        height: 123px;
+        padding: 12px;
+        font-size: 11px;
+        line-height: 12px;
+    }
+    .divider {
+        width: 250px;
+    }
+    .offer__text {
+        width: 230px;
+    }
+    .offer__advantages {
+        width: 225px;
+        margin-top: 5px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .calculating__choose-item {
+        width: 80px;
+    }
+    .calculating__choose_medium {
+        width: 250px;
+    }
+    .calculating__choose_big {
+        width: 270px;
+    }
+    .calculating__choose_big .calculating__choose-item {
+        width: 64px;
+    }
+    .calculating__subtitle {
+        font-size: 14px;
+    }
+    .order__input {
+        width: 245px;
+    }
+    .modal__dialog {
+        max-width: 300px;
+    }
+    .modal__input {
+        width: 225px;
+    }
+    .modal .btn {
+        width: 225px;
+    }
+    .order .title {
+        padding: 5px 35px;
+    }
+    .promotion__timer .timer {
+        width: 220px;
+    }
+    .promotion__timer {
+        width: 100%;
+    }
+    .promotion__timer .title {
+        text-align: center;
+    }
+    .promotion {
+        padding: 75px 50px 70px 45px;
+    }
+}
