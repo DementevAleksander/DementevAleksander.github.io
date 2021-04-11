@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./img/event.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Add a dark overlay */
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body * {
+  z-index: 1;
+}
+
+h1 {
+  font-size: 60px;
+  margin: -80px 0 40px;
+}
+
+.year {
+  font-size: 200px;
+  z-index: -1;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.countdown {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(2);
+}
+
+.wrapper_countdown{
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper_date {
+  display: flex;
+  flex-direction: row;
+}
+
+span {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.errorMessage {
+  /* display: block; */
+  display: none;
+  color: red;
+  margin-top: 15px;
+
+}
+
+.wrapper_date_year {
+  margin-bottom: 10px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.time h2 {
+  margin: 0 0 5px;
+}
+
+.countingButton {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#064b42;
+	font-size:10px;
+	font-weight:bold;
+	padding:2px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+  margin-left: 10px;
+  height: 22px;
+}
+.countingButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.countingButton:active {
+	position:relative;
+	top:1px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .time {
+    margin: 5px;
+  }
+
+  .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .time small {
+    font-size: 10px;
+  }
+
+  select, option, span {
+    font-size: 10px;
+  }
+  .wrapper_countdown{
+    margin-top: 20px;
+  }
+  
+  .wrapper_date {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+  }
+
+}
