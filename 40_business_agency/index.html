@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деловое Агентство</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> <!-- Слайдер -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="#">
+          <span>Р</span>азработка<span>С</span>айтов
+        </a>
+      </div>
+      <div class="nav-list">
+          <a href="#home" class="nav-link">Главная</a>
+          <a href="#about-us" class="nav-link">О нас</a>
+          <a href="#pricing" class="nav-link">Цены</a>
+          <!-- <a href="#contact" class="nav-link">Блог</a> -->
+          <a href="#contact" class="nav-link">Контакты</a>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Menu -->
+    <div class="menu">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+    <!-- End of Menu -->
+    
+    <div class="container">
+      <!-- Section 1 -->
+      <section class="section-1" id="home">
+        <div class="banner">
+          <h1 class="banner-heading">
+            <span class="heading-1">Идеи для бизнеса</span>
+            <span class="heading-2">Консультации</span>
+            <span class="heading-3">Интернет-маркетинг</span>
+            <span class="heading-4">Стратегия</span>
+          </h1>
+          <p class="banner-paragraph">Вперёд к своей мечте !</p>
+          <button class="banner-btn">Откройте сейчас</button>
+        </div>
+      </section>
+      <!-- End of Section 1 -->
+
+      <!-- Section 2 -->
+      <section class="section-2" id="about-us">
+          <h1 class="section-heading">О нас</h1>
+          <div class="section-heading-line"></div>
+          <div class="video-wrapper">
+            <video src="images/about-us-video.mp4" class="video"></video>
+            <div class="controls">
+              <div class="video-bar-wrapper">
+                <div class="video-bar"></div>
+              </div>
+              <div class="buttons">
+                <button id="play-pause">
+                  <i class="far fa-play-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="section-2-paragraph">
+            <i class="fas fa-quote-left"></i>
+            Помогаем с идеями, открытием и развитем бизнеса. Профессионалы в области построения и продвижение бизнес-услуг. Разработываем сайты. Помогаем решать проблемы.
+            <i class="fas fa-quote-right"></i>
+          </p>      
+      </section>
+      <!-- End of Section 2 -->
+
+      <!-- Section 3 -->
+      <section class="section-3" id="pricing">
+        <h1 class="section-heading">Стоимость</h1>
+        <div class="section-heading-line"></div>
+        <div class="swiper-container">
+        <div class="pricing-cards-wrapper swiper-wrapper">
+          <div class="pricing-card swiper-slide">
+            <div class="pricing-card-front">
+              <h1 class="pricing-card-heading heading-free">FREE</h1>
+              <h3 class="pricing-card-price">$0</h3>
+              <ul class="pricing-card-list list-free">
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Консультация</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Рекомендации</span>
+                </li>
+                <li>
+                  <i class="fas fa-times"></i>
+                  <span>Идеи для бизнеса</span>
+                </li>
+                <li>
+                  <i class="fas fa-times"></i>
+                  <span>Обучение</span>
+                </li>
+                <li>
+                  <i class="fas fa-times"></i>
+                  <span>Бизнес-план</span>
+                </li>
+              </ul>
+              <button class="pricing-card-btn btn-free">Выбрать</button>
+            </div>
+            <div class="pricing-card-back back-free">
+              <a href="#contact">Заказать сейчас</a>
+            </div>
+          </div>
+          <div class="pricing-card swiper-slide">
+            <div class="pricing-card-front">
+              <h1 class="pricing-card-heading heading-basic">Базовый</h1>
+              <h3 class="pricing-card-price">$299</h3>
+              <ul class="pricing-card-list list-basic">
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Консультация</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Рекомендации</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Идеи для бизнеса</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Обучение</span>
+                </li>
+                <li>
+                  <i class="fas fa-times"></i>
+                  <span>Бизнес-план</span>
+                </li>
+              </ul>
+              <button class="pricing-card-btn btn-basic">Выбрать</button>
+            </div>
+            <div class="pricing-card-back back-basic">
+              <a href="#contact">Заказать сейчас</a>
+            </div>
+          </div>
+          <div class="pricing-card swiper-slide">
+            <div class="pricing-card-front">
+              <h1 class="pricing-card-heading heading-standard">Стандарт</h1>
+              <h3 class="pricing-card-price">$699</h3>
+              <ul class="pricing-card-list list-standard">
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Консультация</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Рекомендации</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Идеи для бизнеса</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Обучение</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Бизнес-план</span>
+                </li>
+              </ul>
+              <button class="pricing-card-btn btn-standard">Выбрать</button>
+            </div>
+            <div class="pricing-card-back back-standard">
+              <a href="#contact">Заказать сейчас</a>
+            </div>
+          </div>
+          <div class="pricing-card swiper-slide">
+            <div class="pricing-card-front">
+              <h1 class="pricing-card-heading heading-premium">Премиум</h1>
+              <h3 class="pricing-card-price">$999</h3>
+              <ul class="pricing-card-list list-premium">
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Консультация</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Рекомендации</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Идеи для бизнеса</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Обучение</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Бизнес-план</span>
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  <span>Сайт-визитка</span>
+                </li>
+              </ul>
+              <button class="pricing-card-btn btn-premium">Выбрать</button>
+            </div>
+            <div class="pricing-card-back back-premium">
+              <a href="#contact">Заказать сейчас</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- End of Section 3 -->
+
+      <!-- Section 4 -->
+      <section class="section-4" id="contact">
+        <h1 class="section-heading">Контакты</h1>
+        <div class="section-heading-line"></div>
+        <div class="contact-wrapper">
+          <div class="contact-details">
+            <div class="phone">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Телефон</h3>
+              <p>+123 456 789</p>
+              <p>+987 654 321</p>
+            </div>
+            <div class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Адрес</h3>
+              <p>Main street #123</p>
+              <p>Wall street #123</p>
+            </div>
+            <div class="email">
+              <i class="far fa-envelope"></i>
+              <h3>Email</h3>
+              <p>support@gmail.com</p>
+              <p>sales@gmail.com</p>
+            </div>
+          </div>
+          <h1>Связаться</h1>
+          <form class="contact-form">
+            <input type="text" placeholder="Ваше имя">
+            <input type="email" placeholder="Ваш Email">
+            <textarea placeholder="Ваше сообщение"></textarea>
+            <input type="submit" value="Отправить">
+          </form>
+        </div>
+      </section>
+      <!-- End of Section 4 -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-nav">
+          <a href="#home">Главная</a>
+          <a href="#about-us">О нас</a>
+          <a href="#pricing">Цены</a>
+          <a href="#contact">Контакты</a>
+        </div>
+        <p class="copyright">Copyright &copy; Все права защищены</p>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

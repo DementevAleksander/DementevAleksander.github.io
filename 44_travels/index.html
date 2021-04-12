@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Путешествия</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="open-navbar-icon navbar-icon center">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="navbar-wrapper">
+        <nav class="navbar">
+          <div class="close-navbar-icon navbar-icon center">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+          </div>
+          <div class="nav-list">
+            <a href="#header" class="nav-link center">Главная</a>
+            <a href="#popular-tours" class="nav-link center">Туры</a>
+            <a href="#contact" class="nav-link center">О нас</a>
+            <a href="#stories" class="nav-link center">Отзывы</a>
+            <a href="#contact" class="nav-link center">Связь</a>
+          </div>
+        </nav>
+      </div>
+      <!-- End of Navbar -->
+
+      <!-- Header -->
+      <header class="header center" id="header">
+        <div class="header-text">
+          <h1 class="heading">По всему миру</h1>
+          <p class="header-paragraph">
+            «Тем, кто познаёт, путешествовать необходимо.» - © Марк Твен
+          </p>
+        </div>
+        <img
+          src="images/paraglider.png"
+          alt="Header Image"
+          class="header-image"
+        />
+        <div class="logo">
+          <h1>
+            <span class="center">П</span>
+            <span class="center">у</span>
+            <span class="center">т</span>
+            <span class="center">е</span>
+            <span class="center">ш</span>
+            <span class="center">е</span>
+            <span class="center">с</span>
+            <span class="center">т</span>
+            <span class="center">в</span>
+            <span class="center">и</span>
+            <span class="center">е</span>
+          </h1>
+        </div>
+      </header>
+      <!-- End of Header -->
+
+      <!-- Popular tours -->
+      <section class="popular-tours" id="popular-tours">
+        <h1 class="popular-tours-heading">Популярные туры</h1>
+        <div class="cards-wrapper">
+          <div class="card">
+            <div class="front-side">
+              <img src="images/forest.jpg" alt="Forest" class="card-image" />
+              <h1 class="tour-name">Дикий лес</h1>
+              <ul class="card-list">
+                <li class="card-list-item">Тур 7 дней</li>
+                <li class="card-list-item">До 20 человек</li>
+                <li class="card-list-item">4 экскурсовода</li>
+                <li class="card-list-item">Сон в палатках</li>
+                <li class="card-list-item">Сложность: средняя</li>
+              </ul>
+              <button class="navigation-button">
+                цена &gt;&gt;
+              </button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">
+                &lt;&lt; назад
+              </button>
+              <h3 class="tour-price">$399</h3>
+              <button class="card-button">Забронировать</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img src="images/river.jpg" alt="River" class="card-image" />
+              <h1 class="tour-name">Река в горах</h1>
+              <ul class="card-list">
+                <li class="card-list-item">Тур 9 дней</li>
+                <li class="card-list-item">До 30 человек</li>
+                <li class="card-list-item">7 экскурсоводов</li>
+                <li class="card-list-item">Сон в палатках</li>
+                <li class="card-list-item">Сложность: высокая</li>
+              </ul>
+              <button class="navigation-button">
+                цена &gt;&gt;
+              </button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">
+                &lt;&lt; назад
+              </button>
+              <h3 class="tour-price">$499</h3>
+              <button class="card-button">Забронировать</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img src="images/sea.jpg" alt="Sea" class="card-image" />
+              <h1 class="tour-name">Море и пляж</h1>
+              <ul class="card-list">
+                <li class="card-list-item">Тур 5 дней</li>
+                <li class="card-list-item">До 40 человек</li>
+                <li class="card-list-item">8 экскурсоводов</li>
+                <li class="card-list-item">Сон в отеле</li>
+                <li class="card-list-item">Сложность: низкая</li>
+              </ul>
+              <button class="navigation-button">
+                цена &gt;&gt;
+              </button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">
+                &lt;&lt; назад
+              </button>
+              <h3 class="tour-price">$599</h3>
+              <button class="card-button">Забронировать</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Popular tours -->
+
+      <!-- Stories -->
+      <section class="stories" id="stories">
+        <div class="video-container">
+          <video class="bg-video" autoplay muted loop>
+            <source src="images/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="stories-wrapper">
+          <div class="story-bg">
+            <div class="story">
+              <img
+                src="images/story-img-1.jpg"
+                alt="Customer image"
+                class="story-image"
+              />
+              <div class="story-text">
+                <h1 class="story-heading">
+                  Это было лучшее время, проведённое в этом году
+                </h1>
+                <p class="story-paragraph">
+                  Добрый день. Хочу поделиться информацией о туре "Поход к реке в горах".
+                  Это очень сложное и очень увлекательное путешествие.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="story-bg">
+            <div class="story">
+              <img
+                src="images/story-img-2.jpg"
+                alt="Customer image"
+                class="story-image"
+              />
+              <div class="story-text">
+                <h1 class="story-heading">
+                  Мне понравился, это отличный тур
+                </h1>
+                <p class="story-paragraph">
+                  Всем привет. В этом году летал на пляж к морю.
+                  Это действительно очень здорово.
+                  Пляж чистый, вода прозрачная, погода ясная, дешёвые цены.
+                  Лучший пляж, на котором я был!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Stories -->
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h1 class="contact-heading">Напишите нам</h1>
+        <form class="contact-form center">
+          <div class="input-group">
+            <label>Полное имя *</label>
+            <input
+              type="text"
+              class="contact-input"
+              placeholder="Введите Ваш имя"
+            />
+          </div>
+          <div class="input-groups">
+            <div class="input-group">
+              <label>Email *</label>
+              <input
+                type="email"
+                class="contact-input"
+                placeholder="Введите Ваш Email"
+              />
+            </div>
+            <div class="input-group">
+              <label>Телефон</label>
+              <input
+                type="text"
+                class="contact-input"
+                placeholder="Введите номер телефона"
+              />
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Сообщение</label>
+            <textarea
+              class="form-textarea"
+              placeholder="Ваш текст..."
+            ></textarea>
+          </div>
+          <input type="submit" value="Submit" class="form-btn" />
+        </form>
+      </section>
+      <!-- End of Contact -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-list">
+          <a href="#header" class="footer-link">Главная</a>
+          <a href="#popular-tours" class="footer-link">Туры</a>
+          <a href="#contact" class="footer-link">О нас</a>
+          <a href="#stories" class="footer-link">Отзывы</a>
+          <a href="#contact" class="footer-link">Связь</a>
+        </div>
+        <p class="footer-paragraph">
+          Copyright &copy; All Rights Reserved
+        </p>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
